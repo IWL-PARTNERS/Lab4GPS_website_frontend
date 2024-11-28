@@ -1,5 +1,5 @@
 .hero {
-    height: 100vh;
+    height: 80vh; /* Reduce height to show part of the next section */
     background: url('../assets/Images/Hero.jpg') no-repeat center center/cover;
     display: flex;
     align-items: center;

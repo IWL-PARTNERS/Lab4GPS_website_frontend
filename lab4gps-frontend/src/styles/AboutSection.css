@@ -1,0 +1,69 @@
+.about-section {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: #f8f9fa; /* Light background for contrast */
+    padding: 4rem 2rem;
+  }
+  
+  .about-container {
+    display: flex;
+    max-width: 1200px;
+    width: 100%;
+    gap: 2rem;
+    flex-wrap: wrap;
+  }
+  
+  .about-left {
+    flex: 1;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+  
+  .about-image {
+    width: 100%;
+    max-width: 500px;
+    border-radius: 10px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+  }
+  
+  .about-right {
+    flex: 1;
+    font-family: 'Helvetica', sans-serif;
+  }
+  
+  .about-right h2 {
+    color: #141e3f; /* Lab4GPS Blue */
+    font-family: 'Helvetica75-Bold';
+    margin-bottom: 1rem;
+  }
+  
+  .about-content h3 {
+    color: #00CC99; /* Lab4GPS Green */
+    margin: 1rem 0 0.5rem;
+    font-weight: bold;
+  }
+  
+  .about-content p {
+    color: #666666; /* Dark Gray */
+    line-height: 1.6;
+    margin-bottom: 1rem;
+  }
+  
+  .cta-button {
+    background-color: #FF9900; /* Accent Orange */
+    color: white;
+    border: none;
+    padding: 0.8rem 1.5rem;
+    border-radius: 5px;
+    font-weight: bold;
+    font-size: 1rem;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+  }
+  
+  .cta-button:hover {
+    background-color: #cc7a00;
+  }
+  
