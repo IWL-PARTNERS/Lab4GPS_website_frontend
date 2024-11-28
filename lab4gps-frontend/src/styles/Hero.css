@@ -1,0 +1,44 @@
+.hero {
+    height: 100vh;
+    background: url('../assets/Images/Hero.jpg') no-repeat center center/cover;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    color: white;
+    text-align: center;
+  }
+  
+  .hero-content {
+    max-width: 800px;
+  }
+  
+  .hero h1 {
+    font-size: 3rem;
+    margin-bottom: 1rem;
+  }
+  
+  .hero p {
+    font-size: 1.5rem;
+    margin-bottom: 2rem;
+  }
+  
+  .hero-buttons .btn-learn,
+  .hero-buttons .btn-involved {
+    margin: 0 0.5rem;
+    padding: 0.75rem 1.5rem;
+    border: none;
+    cursor: pointer;
+    font-size: 1rem;
+    border-radius: 5px;
+  }
+  
+  .btn-learn {
+    background-color: #00CC99;
+    color: black;
+  }
+  
+  .btn-involved {
+    background-color: #FF9900;
+    color: black;
+  }
+  
