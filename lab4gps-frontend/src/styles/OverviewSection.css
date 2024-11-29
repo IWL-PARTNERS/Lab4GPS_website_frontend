@@ -1,18 +1,20 @@
+/* Overall Layout */
 .overview-section {
     display: flex;
-    justify-content: center;
+    flex-direction: column;
     align-items: center;
     background-color: #f8f9fa; /* Light background for contrast */
     padding: 4rem 2rem;
   }
   
+  /* Introduction Container */
   .overview-container {
     display: flex;
     flex-wrap: wrap;
     max-width: 1200px;
     gap: 2rem;
-    width: 100%;
     align-items: center;
+    width: 100%;
   }
   
   .overview-left {
@@ -21,11 +23,12 @@
     justify-content: center;
   }
   
-  .overview-image {
+  .overview-video {
     width: 100%;
     max-width: 500px;
+    aspect-ratio: 16 / 9; /* Maintain aspect ratio */
     border-radius: 10px;
-    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2); /* Add shadow for better visibility */
   }
   
   .overview-right {
@@ -36,24 +39,18 @@
   .overview-title {
     color: #141e3f; /* Lab4GPS Blue */
     font-family: "Helvetica75-Bold";
-    font-size: 2rem;
+    font-size: 2.5rem;
     margin-bottom: 1rem;
   }
   
   .overview-description {
     color: #666666; /* Dark Gray */
     line-height: 1.6;
-    margin-bottom: 1rem;
-  }
-  
-  .overview-details {
-    color: #666666; /* Dark Gray */
-    line-height: 1.6;
     margin-bottom: 2rem;
   }
   
   .cta-button {
-    background-color: #ff9900; /* Accent Orange */
+    background-color: #00cc99; /* Lab4GPS Green */
     color: white;
     border: none;
     padding: 0.8rem 1.5rem;
@@ -61,10 +58,85 @@
     font-weight: bold;
     font-size: 1rem;
     cursor: pointer;
-    transition: background-color 0.3s ease;
+    transition: background-color 0.3s ease, transform 0.3s ease;
   }
   
   .cta-button:hover {
-    background-color: #cc7a00;
+    background-color: #009977;
+    transform: scale(1.05);
+  }
+  
+  /* Features Section */
+  .features-heading {
+    color: #141e3f;
+    font-family: "Helvetica75-Bold";
+    font-size: 2rem;
+    margin-top: 3rem;
+    margin-bottom: 2rem;
+    text-align: center;
+  }
+  
+  .features-container {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 2rem;
+    width: 100%;
+    max-width: 1200px;
+  }
+  
+  .feature-card {
+    flex: 1 1 300px;
+    background: white;
+    border-radius: 10px;
+    border-left: 6px solid #00cc99; /* Green border on the left */
+    box-shadow: 0 6px 12px rgba(0, 0, 0, 0.1);
+    padding: 2rem 1.5rem;
+    text-align: center;
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+    cursor: pointer;
+    position: relative;
+  }
+  
+  .feature-card:hover {
+    transform: translateY(-10px);
+    box-shadow: 0 10px 20px rgba(0, 0, 0, 0.2);
+  }
+  
+  .feature-icon {
+    font-size: 3rem;
+    color: #00cc99; /* Lab4GPS Green */
+    margin-bottom: 1rem;
+  }
+  
+  .feature-title {
+    color: #141e3f; /* Lab4GPS Blue */
+    font-family: "Helvetica75-Bold";
+    font-size: 1.6rem;
+    margin-bottom: 1rem;
+  }
+  
+  .feature-description {
+    color: #666666;
+    font-size: 1rem;
+    line-height: 1.5;
+    margin-bottom: 1.5rem;
+  }
+  
+  .feature-button {
+    background-color: #141e3f; /* Lab4GPS Blue */
+    color: white;
+    border: none;
+    padding: 0.8rem 1.5rem;
+    border-radius: 50px; /* Rounded button */
+    font-weight: bold;
+    font-size: 1rem;
+    cursor: pointer;
+    transition: background-color 0.3s ease, transform 0.3s ease;
+  }
+  
+  .feature-button:hover {
+    background-color: #0f1533;
+    transform: scale(1.1);
   }
   

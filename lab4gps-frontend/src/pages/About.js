@@ -6,9 +6,7 @@ import AboutSection from '../components/About/AboutSection';
 const About = () => {
   return (
     <>
-      <Navbar />
       <AboutSection />
-      <Footer />
     </>
   );
 };

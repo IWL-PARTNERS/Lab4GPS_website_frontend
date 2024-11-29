@@ -1,14 +1,20 @@
 import React from 'react';
 import '../../styles/AboutSection.css';
-import achievementImage from '../../assets/Images/Lab4GPS_Logo_2024-1.jpg'; // Add an image for achievements
 
 const AboutSection = () => {
   return (
     <div className="about-section">
       <div className="about-container">
-        {/* Left Section: Timeline/Image Carousel */}
+        {/* Left Section: YouTube Video */}
         <div className="about-left">
-          <img src={achievementImage} alt="Achievements Timeline" className="about-image" />
+          <iframe
+            className="about-video"
+            src="https://www.youtube.com/embed/savPHzThsZc"
+            title="Lab4GPS Introduction Video"
+            frameBorder="0"
+            allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
+            allowFullScreen
+          ></iframe>
         </div>
 
         {/* Right Section: Mission, Vision, Core Values */}

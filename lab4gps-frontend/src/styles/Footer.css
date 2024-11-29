@@ -68,6 +68,10 @@
     background-image: url('../assets/Images/linkedinlogo.png');
   }
   
+  .social-icon.talk {
+    background-image: url('../assets/Images/talk.png');
+  }
+  
   .social-icon:hover {
     transform: scale(1.2);
   }

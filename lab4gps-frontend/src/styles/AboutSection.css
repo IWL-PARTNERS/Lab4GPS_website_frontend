@@ -21,11 +21,12 @@
     align-items: center;
   }
   
-  .about-image {
+  .about-video {
     width: 100%;
     max-width: 500px;
+    aspect-ratio: 16 / 9; /* Maintain aspect ratio */
     border-radius: 10px;
-    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2); /* Add shadow for better visibility */
   }
   
   .about-right {
@@ -65,5 +66,16 @@
   
   .cta-button:hover {
     background-color: #cc7a00;
+  }
+  
+  /* Responsive Design */
+  @media (max-width: 768px) {
+    .about-container {
+      flex-direction: column;
+    }
+  
+    .about-video {
+      max-width: 100%;
+    }
   }
   

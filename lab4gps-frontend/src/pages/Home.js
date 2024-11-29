@@ -9,12 +9,10 @@ import OverviewSection from "../components/overview/OverviewSection";
 const Home = () => {
   return (
     <div>
-      <Navbar />
       <Hero />
       <OverviewSection />
 
       {/* Add more sections here */}
-      <Footer />
 
     </div>
   );
