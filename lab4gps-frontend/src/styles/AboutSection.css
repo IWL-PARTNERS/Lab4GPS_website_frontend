@@ -93,6 +93,39 @@
   border-radius: 8px;
 }
 
+/* Why Section Styling */
+.why-content {
+  padding: 1.5rem;
+  line-height: 1.8;
+  color: #333;
+}
+
+.why-content h3 {
+  font-size: 1.8rem;
+  color: #141e3f; /* Lab4GPS Blue */
+  margin-bottom: 1rem;
+}
+
+.why-content h4 {
+  font-size: 1.5rem;
+  color: #00cc99; /* Lab4GPS Green */
+  margin-top: 2rem;
+  margin-bottom: 1rem;
+}
+
+.why-content p {
+  margin-bottom: 1rem;
+}
+
+.why-content blockquote {
+  font-style: italic;
+  font-size: 1.2rem;
+  color: #555;
+  margin: 1rem 0;
+  padding-left: 1.5rem;
+  border-left: 4px solid #00cc99; /* Green accent for blockquote */
+}
+
 /* Team Section */
 .team-section {
   display: grid;
