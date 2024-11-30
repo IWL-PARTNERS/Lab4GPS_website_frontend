@@ -50,49 +50,59 @@ const features = [
 
 const OverviewSection = () => {
   return (
-    <div className="overview-section">
-      <div className="overview-container">
-        {/* Left: YouTube Video */}
-        <div className="overview-left">
-          <iframe
-            className="overview-video"
-            src="https://www.youtube.com/embed/savPHzThsZc"
-            title="Lab4GPS Introduction Video"
-            frameBorder="0"
-            allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
-            allowFullScreen
-          ></iframe>
-        </div>
+    <>
+      {/* Introduction Section */}
+      <div className="overview-section intro-section">
+        <div className="overview-container">
+          {/* Left: YouTube Video */}
+          <div className="overview-left">
+            <iframe
+              className="overview-video"
+              src="https://www.youtube.com/embed/savPHzThsZc"
+              title="Lab4GPS Introduction Video"
+              frameBorder="0"
+              allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
+              allowFullScreen
+            ></iframe>
+          </div>
 
-        {/* Right: Introduction */}
-        <div className="overview-right">
-          <h2 className="overview-title">Introduction to Lab4GPS</h2>
-          <p className="overview-description">
-            At Lab4GPS, we connect innovators, educators, and problem-solvers to
-            create scalable solutions for global challenges. Explore our tools,
-            features, and collaborative spaces designed for impactful action.
-          </p>
-          <Link to="/login">
-            <button className="cta-button">Login to Explore More</button>
-          </Link>
-        </div>
-      </div>
-
-      {/* Features Section */}
-      <h2 className="features-heading">Key Components of Lab4GPS</h2>
-      <div className="features-container">
-        {features.map((feature, index) => (
-          <div key={index} className="feature-card">
-            <div className="feature-icon">{feature.icon}</div>
-            <h3 className="feature-title">{feature.title}</h3>
-            <p className="feature-description">{feature.description}</p>
-            <Link to={feature.route}>
-              <button className="feature-button">Explore {feature.title}</button>
+          {/* Right: Introduction */}
+          <div className="overview-right">
+            <h2 className="overview-title">Introduction to Lab4GPS</h2>
+            <p className="overview-description">
+              At Lab4GPS, we connect innovators, educators, and problem-solvers to
+              create scalable solutions for global challenges. Explore our tools,
+              features, and collaborative spaces designed for impactful action.
+            </p>
+            <Link to="/login">
+              <button className="cta-button" style={{ backgroundColor: "#141e3f" }}>
+                Login to Explore More
+              </button>
             </Link>
           </div>
-        ))}
+        </div>
       </div>
-    </div>
+
+      {/* Separator */}
+      <div className="section-separator"></div>
+
+      {/* Features Section */}
+      <div className="overview-section features-section">
+        <h2 className="features-heading">Key Components of Lab4GPS</h2>
+        <div className="features-container">
+          {features.map((feature, index) => (
+            <div key={index} className="feature-card">
+              <div className="feature-icon">{feature.icon}</div>
+              <h3 className="feature-title">{feature.title}</h3>
+              <p className="feature-description">{feature.description}</p>
+              <Link to={feature.route}>
+                <button className="feature-button">Explore {feature.title}</button>
+              </Link>
+            </div>
+          ))}
+        </div>
+      </div>
+    </>
   );
 };
 

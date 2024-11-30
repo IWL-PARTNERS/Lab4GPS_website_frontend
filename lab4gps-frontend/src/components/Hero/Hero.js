@@ -12,11 +12,19 @@ const Hero = () => {
         <p>Fostering collaboration and innovation globally.</p>
         <div className="hero-buttons">
           {/* Navigate to About page */}
-          <button className="btn-learn" onClick={() => navigate('/about')}>
+          <button
+            className="btn-learn"
+            onClick={() => navigate('/about')}
+            style={{ fontFamily: 'Helvetica75-Bold' }}
+          >
             Learn More
           </button>
           {/* Navigate to Login page */}
-          <button className="btn-involved" onClick={() => navigate('/login')}>
+          <button
+            className="btn-involved"
+            onClick={() => navigate('/login')}
+            style={{ fontFamily: 'Helvetica-Regular' }}
+          >
             Get Involved
           </button>
         </div>

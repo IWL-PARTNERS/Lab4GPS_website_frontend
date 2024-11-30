@@ -25,8 +25,10 @@ const Footer = () => {
         </div>
         <div className="footer-section">
           <h3>Contact Us</h3>
-          <p>Email: <a href="mailto:info@lab4gps.org" className="footer-link">info@lab4gps.org</a></p>
-          <p>Phone: <a href="tel:+1234567890" className="footer-link">+1 234 567 890</a></p>
+          <p>Email: <a href="mailto:info@lab4gps.org" className="footer-link">gpslab@iwl.kr</a></p>
+          <p>KakaoBank: <a href="tel:+1234567890" className="footer-link">3333-30-6931050 
+
+</a></p>
         </div>
         <div className="footer-section social-media">
           <h3>Follow Us</h3>

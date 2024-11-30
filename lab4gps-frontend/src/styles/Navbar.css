@@ -33,25 +33,58 @@
     list-style: none;
     display: flex;
     margin: 0;
+    position: relative;
 }
 
 .nav-links li {
-    margin: 0 0.75rem; /* Slightly reduce spacing for better fit */
+    margin: 0 0.75rem;
+    position: relative; /* To position the pointer */
 }
 
 .nav-links li a {
     text-decoration: none;
-    font-size: 0.95rem; /* Slightly reduced font size */
+    font-size: 0.95rem;
     font-weight: bold;
     transition: color 0.3s ease-in-out;
+    padding: 0.5rem 0;
+    display: inline-block;
+    color: #141e3f; /* Dark text color before scrolling */
 }
 
+/* Change text color on scroll */
 .nav-links li a.scrolled-text {
     color: white; /* Text color when scrolled */
 }
 
-.nav-links li a:not(.scrolled-text) {
-    color: #141e3f; /* Dark text color before scrolling */
+/* Active link styling with a dot */
+.nav-links li.active a {
+    color: #00cc99; /* Highlight active link */
+}
+
+.nav-links li.active::after {
+    content: "";
+    position: absolute;
+    bottom: -3px;
+    left: 50%;
+    transform: translateX(-50%);
+    width: 10px;
+    height: 10px;
+    background-color: #00cc99; /* Dot color */
+    border-radius: 50%; /* Make it a circle */
+    transition: all 0.3s ease;
+}
+
+/* Hovered link styling with a dot */
+.nav-links li:hover::after {
+    content: "";
+    position: absolute;
+    bottom: -3px;
+    left: 50%;
+    transform: translateX(-50%);
+    width: 10px;
+    height: 10px;
+    background-color: #00cc99; /* Dot color */
+    border-radius: 50%; /* Make it a circle */
 }
 
 /* Hamburger Menu for Mobile */
@@ -110,7 +143,7 @@
         background-color: #141e3f; /* Ensure constant background color for dropdown */
     }
 
-    .nav-links li a {
-        color: white; /* Ensure text color is always white in mobile dropdown */
+    .nav-links li.active::after {
+        background-color: white; /* Adjust pointer color for mobile */
     }
 }
